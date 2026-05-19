@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraStream - Premium Music Player</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Gradient Background Membrane -->
+    <div class="bg-gradient-glow"></div>
+
+    <div class="app-container">
+        
+        <!-- ==========================================
+             LEFT SIDEBAR NAVIGATION
+             ========================================== -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-wand-magic-sparkles neon-text"></i>
+                <h2>AuraStream</h2>
+            </div>
+
+            <nav class="nav-menu">
+                <p class="menu-title">Discover</p>
+                <a href="#" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-compass"></i> Browse</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-radio"></i> Radio</a>
+                
+                <p class="menu-title">Library</p>
+                <a href="#" class="nav-item"><i class="fa-solid fa-music"></i> Tracks</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-compact-disc"></i> Albums</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-heart"></i> Favorites</a>
+                
+                <p class="menu-title">Playlists</p>
+                <a href="#" class="nav-item"><i class="fa-solid fa-square-rss"></i> Chill Vibes</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-bolt"></i> Cyberpunk Focus</a>
+            </nav>
+
+            <div class="user-profile">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="User Profile" class="avatar">
+                <div class="user-info">
+                    <h4>Elena Rostova</h4>
+                    <span class="badge">Premium</span>
+                </div>
+                <i class="fa-solid fa-gear settings-toggle"></i>
+            </div>
+        </aside>
+
+        <!-- ==========================================
+             MAIN CONTENT AREA (CENTER)
+             ========================================== -->
+        <main class="main-content">
+            <!-- Top Dashboard Bar -->
+            <header class="top-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for songs, artists, or neon vibes...">
+                </div>
+                <div class="window-actions">
+                    <button class="icon-btn"><i class="fa-regular fa-bell"></i></button>
+                    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </header>
+
+            <!-- Music Category Chips -->
+            <div class="category-chips">
+                <span class="chip active">All</span>
+                <span class="chip">Synthwave</span>
+                <span class="chip">Lo-Fi Chill</span>
+                <span class="chip">Cyberpunk</span>
+                <span class="chip">Electro Swing</span>
+                <span class="chip">Deep Focus</span>
+            </div>
+
+            <!-- HERO SECTION: Premium Visualizer & Player View Card -->
+            <section class="hero-player-card">
+                <div class="hero-overlay"></div>
+                <div class="now-playing-display">
+                    <div class="album-art-wrapper">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80" alt="Current Album Art" id="main-track-art" class="rotating">
+                    </div>
+                    <div class="track-meta">
+                        <span class="now-playing-tag">NOW PLAYING</span>
+                        <h1 id="main-track-title">Midnight Melancholy</h1>
+                        <p id="main-track-artist">Neon Horizon</p>
+                        
+                        <!-- Visualizer Bars Animation -->
+                        <div class="visualizer" id="visualizer-container">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Section 1: Recommended Albums Grid -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h3>Recommended Albums</h3>
+                    <a href="#" class="see-all">See All</a>
+                </div>
+                <div class="albums-grid">
+                    <div class="album-card">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=250&q=80" alt="Album Art">
+                            <button class="play-hover-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <h5>Electric Dreams</h5>
+                        <p>Starlight Voyager</p>
+                    </div>
+                    <div class="album-card">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=250&q=80" alt="Album Art">
+                            <button class="play-hover-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <h5>Retrograde</h5>
+                        <p>The Midnight Ghost</p>
+                    </div>
+                    <div class="album-card">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&w=250&q=80" alt="Album Art">
+                            <button class="play-hover-btn"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <h5>Tokyo Glitch</h5>
+                        <p>Harajuku Drift</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Content Section 2: Recently Played -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h3>Recently Played</h3>
+                </div>
+                <div class="recent-list">
+                    <div class="recent-item">
+                        <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&w=80&q=80" alt="Track Art">
+                        <div class="recent-details">
+                            <h6>Sublime Void</h6>
+                            <p>Nebula Echo</p>
+                        </div>
+                        <span class="recent-time">2 hrs ago</span>
+                    </div>
+                    <div class="recent-item">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=80&q=80" alt="Track Art">
+                        <div class="recent-details">
+                            <h6>Carbon Hearts</h6>
+                            <p>Glitch Mobius</p>
+                        </div>
+                        <span class="recent-time">Yesterday</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ==========================================
+             RIGHT PANEL: CONTEXTUAL PLAYLIST / QUEUE
+             ========================================== -->
+        <aside class="queue-panel">
+            <div class="queue-header">
+                <h3>Live Queue</h3>
+                <span class="track-count" id="queue-count">10 Tracks</span>
+            </div>
+            
+            <!-- Dynamic Scrollable Track List Container -->
+            <div class="queue-list" id="queue-tracks-container">
+                <!-- Injected via JavaScript dynamically for maintainability -->
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- ==========================================
+         STICKY FOOTER PLAYER CONTROL BAR
+         ========================================== -->
+    <footer class="player-footer">
+        <!-- Track Snapshot Display -->
+        <div class="footer-track-info">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=80&q=80" alt="Thumb" id="footer-art">
+            <div class="footer-meta">
+                <h5 id="footer-title">Midnight Melancholy</h5>
+                <p id="footer-artist">Neon Horizon</p>
+            </div>
+            <button class="like-btn active" id="footer-like"><i class="fa-solid fa-heart"></i></button>
+        </div>
+
+        <!-- Master Media Control Hub -->
+        <div class="footer-controls-hub">
+            <div class="playback-buttons">
+                <button class="ctrl-btn secondary" id="btn-shuffle" title="Shuffle"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="ctrl-btn primary" id="btn-prev" title="Previous"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="ctrl-btn master-play" id="btn-play-pause" title="Play/Pause"><i class="fa-solid fa-pause"></i></button>
+                <button class="ctrl-btn primary" id="btn-next" title="Next"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="ctrl-btn secondary" id="btn-repeat" title="Repeat"><i class="fa-solid fa-repeat"></i></button>
+            </div>
+            
+            <!-- Scrubbers / Progress Sliders -->
+            <div class="progress-container">
+                <span class="time-stamp" id="current-time">0:00</span>
+                <div class="slider-wrapper" id="progress-timeline-bg">
+                    <div class="slider-fill" id="progress-timeline-fill" style="width: 35%;"></div>
+                    <input type="range" id="progress-scrubber" min="0" max="100" value="35">
+                </div>
+                <span class="time-stamp" id="total-duration">3:45</span>
+            </div>
+        </div>
+
+        <!-- Utility Sound & Output Mix Tools -->
+        <div class="footer-utilities">
+            <button class="ctrl-btn secondary"><i class="fa-solid fa-layer-group"></i></button>
+            <div class="volume-container">
+                <i class="fa-solid fa-volume-high" id="volume-icon"></i>
+                <div class="slider-wrapper">
+                    <div class="slider-fill" id="volume-fill" style="width: 75%;"></div>
+                    <input type="range" id="volume-scrubber" min="0" max="100" value="75">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Entrypoint -->
+    <script src="script.js"></script>
+</body>
+</html>
